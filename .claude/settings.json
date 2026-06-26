@@ -1,0 +1,26 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"/Applications/saggydev/Job Applications/JobSearch_2026/00_Admin/tracker_review.py\" 2>/dev/null || true",
+            "timeout": 15,
+            "statusMessage": "Running tracker standup...",
+            "once": true
+          }
+        ]
+      }
+    ]
+  },
+  "permissions": {
+    "allow": ["Bash(*)"],
+    "deny": [
+      "Bash(rm -rf *)",
+      "Bash(sudo rm *)",
+      "Bash(rmdir *)",
+      "Bash(shred *)"
+    ]
+  }
+}

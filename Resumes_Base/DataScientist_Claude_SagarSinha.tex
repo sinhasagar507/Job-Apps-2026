@@ -1,0 +1,228 @@
+\documentclass[letterpaper,9pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\input{glyphtounicode}
+
+%----------MARGINS----------
+% Kept tight to 0.35in to ensure it fits on one page
+\usepackage[margin=0.10in]{geometry}
+
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%----------SECTIONS FORMATTING----------
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%----------CUSTOM COMMANDS----------
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & {\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheadingExperience}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & {\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+% --- BULLET POINT RESTORATION ---
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%
+%-------------------------------------------
+\begin{document}
+
+%----------HEADING----------
+\vspace*{-10pt} 
+\begin{center}
+    \textbf{\Huge \scshape Sagar Sinha} \\ \vspace{4pt}
+    \small (602) 670-3742 $|$
+    \href{mailto:sinhasagar507@gmail.com}{sinhasagar507@gmail.com} $|$
+    \href{https://linkedin.com/in/sagarsinha2000}{linkedin.com/in/sagarsinha2000} $|$
+    \href{https://github.com/sinhasagar507}{github.com/sinhasagar507}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {MS Computer Science}{Dec 2025}
+      {Arizona State University}{\textbf{GPA}: 3.93/4.0}
+      \vspace{1pt}
+      \resumeItemListStart
+        \resumeItem{\textbf{Relevant Coursework}: Data Mining, Applied Regression Analysis, NLP, Data Visualization, Distributed Database Systems}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {BS Computer Engineering}{May 2022}
+      {Pandit Deendayal Energy University}{\textbf{GPA}: 9.02/10.0}
+      \vspace{1pt}
+      \resumeItemListStart
+        \resumeItem{\textbf{Relevant Coursework}: Data Structures, Algorithms, RDBMS, Data Warehousing, Statistics, Machine Learning}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+% \section{Technical Skills}
+%   \resumeSubHeadingListStart
+%     \item
+%       \resumeItemListStart
+%         \resumeItem{\textbf{Languages:} Python, SQL, R, Bash}
+%         \resumeItem{\textbf{Data Science \& ML:} Pandas, NumPy, Scikit-learn, PyTorch, Statsmodels}
+%         \resumeItem{\textbf{Analytics \& BI: } Excel, Tableau, Looker Studio, IBM SPSS} 
+%         \resumeItem{\textbf{Data Engineering \& Platforms:} Airflow, PySpark, dbt, Docker, MongoDB, MySQL, PostgreSQL, Google Cloud, Snowflake}
+%   \resumeSubHeadingListEnd
+
+% \section{Technical Skills}
+%   \resumeSubHeadingListStart
+%     \item
+%       \resumeItemListStart
+%         \resumeItem{\textbf{Languages:} Python, SQL, R, Bash}
+%         \resumeItem{\textbf{Data Science \& ML:} Pandas, NumPy, Scikit-learn, PyTorch, Statsmodels}
+%         \resumeItem{\textbf{Analytics \& BI: } Excel, Tableau, Looker Studio, IBM SPSS}
+%         \resumeItem{\textbf{Data Engineering \& Platforms:} Airflow, PySpark, dbt, Docker, MongoDB, MySQL, PostgreSQL, Google Cloud, Snowflake}
+%         % \resumeItem{\textbf{Languages:} Python, SQL, R, Bash}
+%         % \resumeItem{\textbf{Libraries:} Pandas, NumPy, Scikit-learn, PyTorch, Statsmodels, spaCy, Gensim, fastText, NLTK, Matplotlib, Seaborn, Plotly, ggplot2, Selenium, Airflow, PySpark}
+%         % \resumeItem{\textbf{Platforms:} Tableau, Looker Studio, MS Excel, dbt, Docker, MySQL, PostgreSQL, Google Cloud, Snowflake, MongoDB}
+%       \resumeItemListEnd
+%   \resumeSubHeadingListEnd
+
+%-----------PROFESSIONAL EXPERIENCE-----------
+%-----------PROFESSIONAL EXPERIENCE-----------
+\section{Professional Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheadingExperience
+  {\textbf{Backend Developer (AWS) Intern, Mindsparked}}{Mar 2026 -- Present}
+  \resumeItemListStart
+    \resumeItem{Built a \textbf{System Health data workflow} with \textbf{AWS Lambda}, \textbf{DynamoDB}, \textbf{Aurora PostgreSQL}, \textbf{API Gateway}, and \textbf{CloudWatch} to generate rolling-window anomaly insights from Kairos interaction logs.}
+    \resumeItem{Improved sidebar data retrieval performance by \textbf{40\%} by optimizing \textbf{Aurora PostgreSQL} query paths, removing redundant joins, and adding targeted indexes.}
+    \resumeItem{Analyzed \textbf{serverless data access patterns} using \textbf{CloudWatch Insights}, \textbf{RDS metrics}, and \textbf{Performance Insights} to identify reliability, timeout, retry, and scaling risks.}
+    \resumeItem{\textbf{Technical Skills:} Python, SQL, AWS Lambda, Aurora PostgreSQL, DynamoDB, API Gateway, Step Functions, CloudWatch, Performance Insights, Terraform, Git.}
+  \resumeItemListEnd
+
+\resumeSubheadingExperience
+  {\textbf{AI \& Data Processing Externship, Extern}}{Sep 2025 -- Dec 2025}
+  \resumeItemListStart
+    \resumeItem{Implemented an \textbf{OCR indexing engine} that converted \textbf{200+ page unstructured mortgage documents} into searchable context for an \textbf{AI Q\&A workflow}.}
+    \resumeItem{Implemented \textbf{hybrid retrieval} with optimized chunking and vector search, achieving \textbf{2s median query latency} and \textbf{MRR = 0.98} for mortgage document search.}
+    \resumeItem{Added \textbf{pipeline observability} with logging for data lineage, document routing, and processing metrics, improving traceability across the mortgage workflow.}
+    \resumeItem{\textbf{Technical Skills:} Python, OCR, Vector Search, RAG, Data Indexing, Logging, Data Lineage, Pipeline Observability.}
+  \resumeItemListEnd
+
+\resumeSubheadingExperience
+  {\textbf{Data Analyst, Arizona State University}}{Jul 2024 -- Dec 2025}
+  \resumeItemListStart
+    \resumeItem{Engineered an \textbf{AWS ELT pipeline} to ingest \textbf{50K+ Canvas records} using Selenium and BeautifulSoup, staging data in \textbf{S3} and loading structured datasets into \textbf{Redshift}.}
+    \resumeItem{Built \textbf{Tableau dashboards} and KPI reports comparing ACHA/NCHA survey results with national benchmarks, tracking \textbf{40+ wellness KPIs} across 3 years.}
+    \resumeItem{Standardized survey reporting with intake templates and scripted \textbf{QA checks}, reducing ad-hoc cleaning while surfacing \textbf{4 high-risk mental health trends}.}
+    \resumeItem{\textbf{Technical Skills:} Python, MySQL, Tableau, AWS, EDA, Data Modeling.}
+  \resumeItemListEnd
+
+\resumeSubheadingExperience
+  {\textbf{Data Science Researcher, Accredian}}{Apr 2023 -- Jul 2023}
+  \resumeItemListStart
+    \resumeItem{Built \textbf{Python feature-engineering pipelines} with Pandas, NumPy, and Torch to support learner engagement analysis for \textbf{3,000+ platform users}.}
+    \resumeItem{Performed \textbf{root-cause analysis} on recurring data issues, improving production support workflows and contributing to a \textbf{90\% issue-resolution rate}.}
+    \resumeItem{Refactored legacy scripts into \textbf{modular Python components}, reducing technical debt and improving reliability of learner engagement datasets.}
+    \resumeItem{\textbf{Technical Skills:} Python, Pandas, NumPy, PyTorch, MySQL, Tableau, EDA, Data Modeling.}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+  
+%-----------RELEVANT PROJECTS-----------
+\section{Relevant Projects}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{Repairable Reasoning in Discrete Diffusion LLMs}}{}
+      \resumeItemListStart
+        \resumeItem{Engineered a unified evaluation harness to compare Discrete Diffusion (Llada-8B) and Autoregressive (Llama-8B) models across GSM8K, AIME, LogiQA, and GPQA datasets.}
+        % \resumeItem{Engineered a unified evaluation harness to compare Discrete Diffusion (Llada-8B) and Autoregressive (Llama-8B) models across GSM8K, AIME, LogiQA, and GPQA datasets.}
+        \resumeItem{Orchestrated repairability trials revealing that extra compute scales Llada accuracy to 85.0\% (13.5\% gain) with zero over-repair, compared to high over-repair and stagnation in Llama models.}
+        \resumeItem{\textbf{Technical Skills: }Python (Torch), Huggingface, LLM, Supervised Finetuning, Prompting, Inference, Evaluation Metrics}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{ParkFlow - Geospatial Analytics for Ride Demand Monitoring}}{}
+      \resumeItemListStart
+        \resumeItem{Developed \textbf{SQL queries} on a \textbf{large structured} amusement park database and orchestrated \textbf{Python analyses} to map park-wide visitor flows and ride utilization.}
+        \resumeItem{Executed in-depth statistical \textbf{EDA} and implemented \textbf{Shewhart-style control-chart} monitoring on ride-level attendance to pinpoint underperforming attractions, improving \textbf{anomaly-detection} precision by \textbf{25\%}.}
+        \resumeItem{Leveraged \textbf{geospatial analytics (PySAL – Moran’s I)} and produced choropleth maps to guide staffing and resource allocation across \textbf{15+ attractions}, accelerating location-based decisions by \textbf{20\%}.}
+        \resumeItem{\textbf{Technical Skills: }Python(Pandas, Matplotlib, Statsmodels, Geopandas, Seaborn), MySQL}
+      \resumeItemListEnd 
+
+    \resumeProjectHeading
+      {\textbf{HousePriceIQ - Feature Selection \& Price Prediction Modeling}}{}
+      \resumeItemListStart
+        \resumeItem{Optimized 80+ sparse features using a two-stage selection workflow (VarianceThreshold, ExtraTrees), effectively filtering noise and identifying primary price drivers.}
+        \resumeItem{Tuned a RandomForest Regressor with custom RMSLE and Adjusted $R^2$ metrics, leveraging one-hot encoding to mitigate overfitting across heterogeneous data splits.}
+        \resumeItem{\textbf{Technical Skills: }Python(Scikit-Learn, FastAPI), Data Visualization, Jupyter Notebook}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  
+%-----------ACHIEVEMENTS-----------
+% \section{Achievements}
+% \resumeSubHeadingListStart
+%     \resumeSubheadingExperience
+%       {\textbf{ASU AI Spark Challenge}}{}
+%       \resumeItemListStart
+%         \resumeItem{Won 2nd Prize and a \$2,000 scholarship at the hackathon for co-developing Socratic AI, a platform teaching GPU-accelerated Python coding through interactive dialogue and live benchmarking.}
+%       \resumeItemListEnd
+%     \vspace{2pt}
+%     \resumeSubheadingExperience
+%       {\textbf{SunHacks 2024, ASU}}{}
+%       \resumeItemListStart
+%         \resumeItem{Won the MLH Best Use of Midnight Award at SunHacks 2024 for developing Hack Thy Neighbour, a decentralized lending platform using blockchain and smart contracts to enable transparent, community-governed fund pooling and democratic lending decisions.}
+%       \resumeItemListEnd
+% \resumeSubHeadingListEnd
+
+\end{document}

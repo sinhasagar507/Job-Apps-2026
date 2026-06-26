@@ -1,0 +1,30 @@
+# --- OS / editor junk ---
+.DS_Store
+
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+
+# --- LaTeX build artifacts ---
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# --- Agent runtime logs ---
+JobSearch_2026/00_Admin/agent/runs.log
+
+# --- Personal application data (kept local, never pushed) ---
+JobSearch_2026/00_Admin/Application_Tracker.csv
+JobSearch_2026/00_Admin/Application_Tracker.xlsx
+JobSearch_2026/00_Admin/Application_Tracker_backup_*.csv
+JobSearch_2026/02_Resumes_Tailored/
+JobSearch_2026/03_CoverLetters/
+JobSearch_2026/04_Applications/
+JobSearch_2026/05_FollowUps/
+
+# Stray tailored resume sitting at repo root
+/Tauck_*

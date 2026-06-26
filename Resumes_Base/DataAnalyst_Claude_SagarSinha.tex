@@ -1,0 +1,236 @@
+\documentclass[letterpaper,9pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\input{glyphtounicode}
+
+%----------MARGINS----------
+% Kept tight to 0.35in to ensure it fits on one page
+\usepackage[margin=0.10in]{geometry}
+
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%----------SECTIONS FORMATTING----------
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%----------CUSTOM COMMANDS----------
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & {\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheadingExperience}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & {\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+% --- BULLET POINT RESTORATION ---
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%
+%-------------------------------------------
+\begin{document}
+
+%----------HEADING----------
+\vspace*{-15pt} 
+\begin{center}
+    \textbf{\Huge \scshape Sagar Sinha} \\ \vspace{2pt}
+    \small (602) 670-3742 $|$
+    \href{mailto:sinhasagar507@gmail.com}{sinhasagar507@gmail.com} $|$
+    \href{https://linkedin.com/in/sagarsinha2000}{linkedin.com/in/sagarsinha2000} $|$
+    \href{https://github.com/sinhasagar507}{github.com/sinhasagar507}
+\end{center}
+
+
+%----------SUMMARY---------
+% \section{Summary}
+% Data Analyst with an MS in Computer Science and 1.5 years of experience optimizing AI-integration, sales, and business processes. Highly skilled in Python, MS Excel, SQL, and Cloud environments like Snowflake and BigQuery. Proven track record of delivering actionable insights and visualizations to stakeholders, leveraging LLMs and advanced analytics to solve complex organizational challenges.
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {MS Computer Science}{Dec 2025}
+      {Arizona State University}{\textbf{GPA}: 3.93/4.0}
+      \vspace{1pt}
+      \resumeItemListStart
+        \resumeItem{\textbf{Relevant Coursework}: Data Mining, Applied Regression Analysis, NLP, Data Visualization, Distributed Database Systems}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {BS Computer Engineering}{May 2022}
+      {Pandit Deendayal Energy University}{\textbf{GPA}: 9.02/10.0}
+      \vspace{1pt}
+      \resumeItemListStart
+        \resumeItem{\textbf{Relevant Coursework}: Data Structures, Algorithms, RDBMS, Data Warehousing, Statistics, Machine Learning}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+% %-----------TECHNICAL SKILLS-----------
+% \section{Technical Skills}
+%   \resumeSubHeadingListStart
+%     \item
+%       \resumeItemListStart
+%         \resumeItem{\textbf{Languages:} Python, SQL, R, Bash}
+%         \resumeItem{\textbf{Libraries:} Pandas, NumPy, Scikit-learn, PyTorch, Statsmodels, spaCy, Gensim, fastText, NLTK, Matplotlib, Seaborn, Plotly, ggplot2, Selenium, Airflow, PySpark}
+%         \resumeItem{\textbf{Platforms:} Tableau, Looker Studio, MS Excel, dbt, Docker, MySQL, PostgreSQL, Google Cloud, Snowflake, MongoDB}
+%       \resumeItemListEnd
+%   \resumeSubHeadingListEnd
+
+%-----------PROFESSIONAL EXPERIENCE-----------
+% \section{Professional Experience}
+%   \resumeSubHeadingListStart
+%     \resumeSubheadingExperience
+%       {\textbf{Analyst Intern, Extern}}{Sep 2025 -- Dec 2025}
+%       \resumeItemListStart
+%         \resumeItem{Collaborated with \textbf{Product} and Engineering teams to translate \textbf{business requirements} into a structured data pipeline, transforming unstructured \textbf{200+ page} blobs into searchable assets to drive operational efficiency.}
+%         \resumeItem{Led \textbf{performance optimization} and \textbf{experimentation} on search algorithms (Hybrid RAG), tuning ranking logic to achieve \textbf{5x recall} and \textbf{2s latency}, directly enhancing the \textbf{User Experience (UX)} for the internal Q\&A tool.}
+%         \resumeItem{Deployed a \textbf{stakeholder-facing} interface with real-time \textbf{metric logging} and audit trails, incorporating user feedback to implement \textbf{product features} like document routing and previews that improved transparency.}
+%         \resumeItem{\textbf{Technical Skills: }Python(PyMuPDF, PaddleOCR, LlamaIndex, HuggingFace), LLM(Mistral, Gemini, Phi-2), RAG, Vector Embeddings, Retriever }
+%       \resumeItemListEnd
+
+%     \resumeSubheadingExperience
+%       {\textbf{Data Analyst, Part Time, Arizona State University}}{Jul 2024 -- Dec 2025}
+%       \resumeItemListStart
+%         \resumeItem{Partnered with \textbf{cross-functional leadership} to automate the extraction of 50K+ records, improving \textbf{data quality} and cutting manual collection time by 4x to support frequent, \textbf{data-driven program tracking.}}
+%         \resumeItem{Developed \textbf{KPI reporting systems} to benchmark wellness results against national datasets, defining 40+ metrics to perform \textbf{root cause analysis} on high-risk trends in campus health.}
+%         \resumeItem{Established \textbf{data governance} standards by creating intake templates and \textbf{automated QA checks}, reducing ad-hoc data cleaning and ensuring \textbf{data integrity} for organizational analysts.}
+%         \resumeItem{\textbf{Technical Skills: }Python, MS Excel, Tableau, Google Sheets, Exploratory Data Analysis, Data Modeling}
+%       \resumeItemListEnd
+
+%     \resumeSubheadingExperience
+%       {\textbf{Data Science Researcher}, Accredian}{Apr 2023 -- Jul 2023}
+%       \resumeItemListStart
+%         \resumeItem{Developed \textbf{end-to-end analytical workflows} for 3,000+ users, performing deep-dive \textbf{EDA and feature engineering} to deliver \textbf{actionable insights} that optimized learner performance and engagement.}
+%         \resumeItem{Served as a \textbf{Subject Matter Expert (SME)} for technical troubleshooting, resolving 90\% of user issues on time and collaborating with \textbf{stakeholders} to improve product environment stability.}
+%         \resumeItem{\textbf{Technical Skills: }Python(Pandas, Matplotlib, Seaborn, Torch), MS Excel, Statistical Analysis, Project Management, Technical Support}
+%       \resumeItemListEnd
+%   \resumeSubHeadingListEnd
+
+%-----------PROFESSIONAL EXPERIENCE-----------
+\section{Professional Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheadingExperience{\textbf{AWS Data Developer Intern, MindSparked}}{Mar 2026 -- Present}
+  \resumeItemListStart
+    \resumeItem{Built AWS-based data workflows for Kairos, an AI-enabled education platform, using Lambda, S3, Step Functions, API Gateway, and Aurora PostgreSQL to support reporting, monitoring, and internal analytics operations.}
+    \resumeItem{Reduced data retrieval latency by 40\% through optimization of Aurora PostgreSQL query paths, removal of redundant SQL joins, and addition of targeted indexes for high-frequency analytics workflows.}
+    \resumeItem{Improved backend data observability by analyzing CloudWatch logs, Lambda invocation patterns, RDS-processing activity, and Aurora workload metrics to identify bottlenecks and reliability risks.}
+    \resumeItem{\textbf{Technical Skills:} SQL, PostgreSQL, Python, AWS Lambda, S3, Aurora RDS, Step Functions, API Gateway, CloudWatch, Terraform}
+  \resumeItemListEnd
+
+  \resumeSubheadingExperience{\textbf{AI Intern, Extern}}{Sep 2025 -- Dec 2025}
+  \resumeItemListStart
+    \resumeItem{Engineered the core document retrieval engine for an AI Mortgage Assistant, transforming unstructured data into searchable context to improve User Discovery Success and reduce time-to-information for loan officers.}
+    \resumeItem{Optimized search relevance (MRR of 0.98) and reduced user friction by achieving a 2s median query latency, directly improving the Product Task Completion Rate for complex document inquiries.}
+    \resumeItem{Developed product health monitoring by implementing automated data observability and logging, enabling real-time tracking of document processing success and feature adoption metrics.}
+    \resumeItem{\textbf{Technical Skills:} Python (PyMuPDF, PaddleOCR), Vector Databases, Ranking, Natural Language Processing, Information Retrieval, Large Language Models (LLMs), Mortgage Industry}
+  \resumeItemListEnd
+
+  \resumeSubheadingExperience{\textbf{Data Analyst, Arizona State University}}{Jul 2024 -- Dec 2025}
+  \resumeItemListStart
+    \resumeItem{Extracted and standardized 50K+ records by designing SQL ETL pipelines to significantly enhance data quality and accuracy for downstream reporting.}
+    \resumeItem{Visualized campus health KPIs for leadership stakeholders through interactive Tableau and Excel dashboards, enabling data-driven root cause analysis of health trends.}
+    \resumeItem{Reduced manual data manipulation time by 4x while ensuring reliable reporting inputs by establishing automated QA checks and organizational data governance protocols.}
+    \resumeItem{\textbf{Technical Skills:} SQL, Tableau, ETL, Data Governance, KPI Reporting, Excel}
+  \resumeItemListEnd
+
+  \resumeSubheadingExperience{\textbf{Data Science Researcher, Accredian}}{Apr 2023 -- Jul 2023}
+  \resumeItemListStart
+    \resumeItem{Optimized engagement strategies for 3000+ learners by conducting Python-based Exploratory Data Analysis (EDA) and feature engineering on behavioral datasets.}
+    \resumeItem{Resolved data discrepancies for non-technical stakeholders by serving as the Subject Matter Expert for database troubleshooting and technical communications.}
+    \resumeItem{\textbf{Technical Skills:} Python (Pandas, Matplotlib), Statistical Analysis, Stakeholder Communication, Project Management}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+%-----------TECHNICAL SKILLS-----------
+% \section{Technical Skills}
+%   \resumeSubHeadingListStart
+%     \item
+%       \resumeItemListStart
+%         \resumeItem{\textbf{Data Analysis \& Programming:} Python (Pandas, NumPy), SQL, R, Bash, Statistical Analysis, ETL}
+%         \resumeItem{\textbf{Visualization \& Reporting:} Tableau, Looker Studio, Power BI, Matplotlib, Seaborn, ggplot2, Visio}
+%         \resumeItem{\textbf{Databases \& Cloud:} MySQL, PostgreSQL, Snowflake, MongoDB, Google Cloud (BigQuery), dbt}
+%         \resumeItem{\textbf{Methodologies:} Agile/Scrum, SDLC, Data Governance, Business Process Modeling, Root Cause Analysis}
+%       \resumeItemListEnd
+%   \resumeSubHeadingListEnd
+
+%-----------RELEVANT PROJECTS-----------
+\section{Relevant Projects}
+  \resumeSubHeadingListStart
+   \resumeProjectHeading
+      {\textbf{Enterprise Sales Data Warehouse}}{}
+      \resumeItemListStart
+        \resumeItem{\textbf{Streamlined visibility into sales, products, and customer segmentation} by architecting a Snowflake warehouse using Medallion architecture to unify ERP and CRM data}
+        \resumeItem{\textbf{Ensured data integrity for executive-level revenue reporting} by automating SQL ETL pipelines and governance protocols to standardize complex data transformation.}
+        \resumeItem{\textbf{Technical Skills:} Database Architecture Design, Metric Development, ETL architecture, Snowflake SQL}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Sales Pulse}}{}
+      \resumeItemListStart
+        \resumeItem{\textbf{Provided real-time, interactive insights for stakeholders} by administering data cleaning, transformation, and modeling in Tableau using advanced calculations and parameters.}
+        \resumeItem{\textbf{Visualized \$609K in total sales and a 32.7\% year-over-year profit increase} through dynamic dashboards that reduced manual reporting time by 25\% and enabled real-time monitoring of monthly performance trends.}
+        \resumeItem{\textbf{Technical Skills: }Tableau (Prep Builder, KPI Development, Charts, Dashboards)}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Urban Mobility Insights}}{Spring 2025}
+      \resumeItemListStart
+        \resumeItem{Utilized \textbf{dbt} to engineer a \textbf{STAR schema} in \textbf{Bigquery} for integrating taxi and climate datasets, reducing \textbf{ELT latency by 30\%} and accelerating KPI exploration for urban planning.}
+        \resumeItem{Orchestrated a \textbf{Spark} pipeline to process \textbf{10M+} NYC taxi records, engineering spatiotemporal features to predict trip durations and optimize service-level mobility insights.}
+        \resumeItem{\textbf{Technical Skills: }Python, Apache Airflow, Google Cloud (GCS, Bigquery, Dataproc), }
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\end{document}

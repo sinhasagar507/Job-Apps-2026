@@ -1,0 +1,202 @@
+\documentclass[letterpaper,9pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\input{glyphtounicode}
+
+%----------MARGINS----------
+% Kept tight to 0.35in to ensure it fits on one page
+\usepackage[margin=0.10in]{geometry}
+
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%----------SECTIONS FORMATTING----------
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%----------CUSTOM COMMANDS----------
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & {\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheadingExperience}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & {\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+% --- BULLET POINT RESTORATION ---
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%
+%-------------------------------------------
+\begin{document}
+
+%----------HEADING----------
+\vspace*{-10pt} 
+\begin{center}
+    \textbf{\Huge \scshape Sagar Sinha} \\ \vspace{4pt}
+    \small (602) 670-3742 $|$
+    \href{mailto:sinhasagar507@gmail.com}{sinhasagar507@gmail.com} $|$
+    \href{https://linkedin.com/in/sagarsinha2000}{linkedin.com/in/sagarsinha2000} $|$
+    \href{https://github.com/sinhasagar507}{github.com/sinhasagar507}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {MS Computer Science}{Dec 2025}
+      {Arizona State University}{\textbf{GPA}: 3.93/4.0}
+      \resumeItemListStart
+        \resumeItem{\textbf{Relevant Coursework}: Data Mining, Applied Regression Analysis, NLP, Data Visualization, Distributed Database Systems}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {BS Computer Engineering}{May 2022}
+      {Pandit Deendayal Energy University}{\textbf{GPA}: 9.02/10.0}
+      \resumeItemListStart
+        \resumeItem{\textbf{Relevant Coursework}: Data Structures, Algorithms, RDBMS, Data Warehousing, Statistics, Machine Learning}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+  \resumeSubHeadingListStart
+    \item
+      \resumeItemListStart
+        \resumeItem{\textbf{Languages:} Python, SQL, R, Bash}
+        \resumeItem{\textbf{Libraries:} Pandas, NumPy, Scikit-learn, PyTorch, Statsmodels, spaCy, Gensim, fastText, NLTK, Matplotlib, Seaborn, Plotly, ggplot2, Selenium, Airflow, PySpark}
+        \resumeItem{\textbf{Platforms:} Tableau, Looker Studio, MS Excel, dbt, Docker, MySQL, PostgreSQL, Google Cloud, Snowflake, MongoDB}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROFESSIONAL EXPERIENCE-----------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheadingExperience
+      {\textbf{Data Engineer Intern, Mindsparked}}{Mar 2026 -- Present}
+      \resumeItemListStart
+        \resumeItem{Engineered a \textbf{System Health data pipeline} using \textbf{AWS Lambda}, \textbf{DynamoDB}, \textbf{Aurora PostgreSQL}, \textbf{API Gateway}, and \textbf{CloudWatch} to transform Kairos interaction logs into rolling-window anomaly insights.}
+        \resumeItem{Improved high-frequency data retrieval performance by \textbf{40\%} by optimizing \textbf{Aurora PostgreSQL} query paths, removing redundant joins, and adding targeted indexes for faster analytical access.}
+        \resumeItem{Audited \textbf{serverless data workflows} across Lambda, Aurora, and DynamoDB using \textbf{CloudWatch Insights}, \textbf{RDS metrics}, and \textbf{Performance Insights} to identify retry, timeout, read/write, and scaling risks.}
+        \resumeItem{\textbf{Technical Skills:} Python, SQL, AWS Lambda, Aurora PostgreSQL, DynamoDB, API Gateway, Step Functions, CloudWatch, Performance Insights, Terraform, Git.}
+      \resumeItemListEnd
+
+      \resumeSubheadingExperience
+      {\textbf{AI \& Data Processing Externship, Extern}}{Sep 2025 -- Present}
+      \resumeItemListStart
+      \resumeItem{Built a modular, AI-powered pipeline to process 200+ page mortgage blob files–combining OCR (Tesseract, PaddleOCR), PDF parsing (PyMuPDF), and RAG techniques for intelligent data extraction, classification, and search.}
+      \resumeItem{Engineered a RAG-based retrieval architecture via LlamaIndex; optimized multi-document ingestion using semantic chunking and metadata-aware indexing while benchmarking Mistral and Phi-2 performance.}
+      \resumeItem{Benchmarked E2E pipeline performance–targeting OCR accuracy, RAG retrieval metrics, and routing logic—to deliver technical trade-off analyses, deployment roadmaps, and a functional UI demo.}
+      \resumeItem{\textbf{Technical Skills: }RAG(LlamaIndex), LLMs(Mistral, Phi-2), OCR(Tesseract, PaddleOCR), Vector Databases, Semantic Chunking, Metadata Filtering, PDF Parsing(PyMuPDF)}
+    \resumeItemListEnd
+       
+    \resumeSubheadingExperience
+      {\textbf{Data Specialist, Part Time}, Arizona State University}{Jul 2024 -- Present}
+      \resumeItemListStart
+        \resumeItem{Engineered an Airflow-orchestrated ELT pipeline on AWS to ingest 50K+ Canvas records; automated extraction via Selenium and BeautifulSoup to S3, with structured loading into Redshift for centralized modeling.}
+        \resumeItem{Benchmarked health surveys (ACHA, WISHES) against national datasets, identifying key trends to enhance wellness initiatives.}
+        \resumeItem{Streamlined data collection and analysis procedures with analysts and health coordinators, improving report consistency and accelerating decisions on student wellness programs.}
+       \resumeItem{\textbf{Technical Skills: }Python, MySQL, Tableau, Amazon Web Services (AWS), Exploratory Data Analysis, Data Modeling}
+      \resumeItemListEnd
+
+    \resumeSubheadingExperience
+      {\textbf{Data Researcher}, Accredian}{Apr 2023 -- Jul 2023}
+      \resumeItemListStart
+        \resumeItem{Revamped ML/NLP modules (classification, GRU, LSTM, BERT), improving clarity and applicability for 3{,}000+ learners.}
+        \resumeItem{Resolved 90\% of technical tickets on time by fixing ML errors, clarifying concepts, and troubleshooting environments, reducing escalations to senior instructors.}
+        \resumeItem{\textbf{Technical Skills: }Python (Pandas, NumPy, Torch), Feature Engineering Pipelines, Feature Engineering, Production Support, System Optimization, Root Cause Analysis}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------RELEVANT PROJECTS-----------
+\section{Relevant Projects}
+  \resumeSubHeadingListStart
+     \resumeProjectHeading
+        {\textbf{Enterprise Sales Data Warehouse}}{}
+          \resumeItemListStart
+            \resumeItem{Architected a SQL Server data warehouse using a \textbf{Medallion framework (Bronze, Silver, Gold)} to consolidate disparate ERP and CRM CSV sources into a centralised \textbf{Star Schema}, creating a single point of truth for cross-functional reporting.}
+            \resumeItem{Automated end-to-end \textbf{ETL pipelines} via \textbf{SQL Stored Procedures and bulk inserts}, transforming manual data collection into automated refreshes that reduce reporting latency from weeks of manual preparation to minutes of processing time.}
+            \resumeItem{Optimised \textbf{data integrity and governance} by implementing advanced cleansing logic and surrogate keys, achieving \textbf{100\% record accuracy} through automated quality checks and establishing full \textbf{data lineage} for all business-ready views.}
+            \resumeItem{\textbf{Technical Skills:} Database Architecture Design, Metric Development, ETL architecture, Snowflake SQL}
+          \resumeItemListEnd
+
+        \resumeProjectHeading
+          {\textbf{Distributed Banking System}}{}
+          \resumeItemListStart
+            \resumeItem{Containerized and configured a distributed, \textbf{sharded MongoDB} cluster using \textbf{Docker}, sustaining up to \textbf{200K+ concurrent requests} with \textbf{sub-70\,ms read latency} under load.}
+            \resumeItem{Simulated heavy read/write workloads and implemented automated \textbf{replica-set health checks} and basic failover monitoring, maintaining \textbf{$>$99\% successful requests} at peak concurrency.}
+            \resumeItem{\textbf{Technical Skills}: Databases, Data Modeling, Database Consistency, Concurrency Management, Golang, Modular Architecture, Containerization, Routing}
+          \resumeItemListEnd
+
+
+    \resumeProjectHeading
+      {\textbf{Urban Mobility Insights}}{}
+      \resumeItemListStart
+        \resumeItem{Engineered an end-to-end GCP pipeline using \textbf{Terraform, Airflow, and BigQuery} to ingest and partition NYC taxi data into a scalable warehouse.}
+        \resumeItem{Built a \textbf{dbt-based dimensional model} and \textbf{Looker Studio dashboard} to visualize trip trends and revenue, applying rigorous data testing and documentation.}
+        \resumeItem{\textbf{Technical Skills: }Dimensional Data Modeling, Google Cloud (Google Cloud Storage, Google Bigquery, Dataproc Serverless)}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd    
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements}
+\resumeSubHeadingListStart
+    \item[]
+    \resumeItemListStart
+        \resumeItem{\textbf{ASU AI Spark Challenge:} Won 2nd Prize and a \$2,000 scholarship at the hackathon for co-developing Socratic AI, a platform teaching GPU-accelerated Python coding through interactive dialogue and live benchmarking.}
+        \resumeItem{\textbf{SunHacks 2024, ASU:} Won the MLH Best Use of Midnight Award for developing Hack Thy Neighbour, a decentralized lending platform using blockchain and smart contracts to enable transparent, community-governed fund pooling.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\end{document}
