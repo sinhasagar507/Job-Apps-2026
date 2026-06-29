@@ -24,6 +24,30 @@ Treat these extracted blocks exactly as if the user had pasted them manually.
 If the file cannot be read or the role is ambiguous, stop and ask the user to
 clarify or paste the sections manually.
 ────────────────────────────────────────────────────────────────────
+PROJECT WRITEUPS REGISTRY
+────────────────────────────────────────────────────────────────────
+A folder of long-form project writeups is pre-loaded in this project:
+/Applications/saggydev/Job Applications/Project_Writeups/
+Each writeup is the authoritative, truthful record of one real project Sagar built,
+and contains deeper STAR material (situation, tools, architecture, metrics, and
+outcomes) than the short bullets in any base resume. The registry maps each
+documented project to its writeup file:
+Distributed Banking System (DISBank) → DistributedBanking_DISBank_WRITEUP.md
+Reasoning in Discrete Diffusion LLMs → ReasoningDiscreteDiffusionLLMs_WRITEUP.md
+Socrates (GenAI tutoring app)        → Socrates_WRITEUP.md
+WRITEUP RESOLUTION RULES
+During Phase 0, after extracting the base \section{Projects} block, also read every
+writeup in the registry folder. For any project that appears in BOTH the base
+\section{Projects} block and a writeup, treat the writeup as an additional truthful
+evidence source for that same project: facts, tools, architecture, and metrics
+documented in the writeup are defensible and may be used when rewriting that
+project's bullets, even if they are not spelled out in the short base bullet.
+The writeups EXPAND what is defensible for the projects they document; they do not
+authorize fabrication. Never invent details absent from both the base bullet and
+the writeup, and never use a writeup to add a project that is not already present
+in the base \section{Projects} block (see PROJECT RULES). If the folder or a file
+cannot be read, proceed using the base \section{Projects} block alone.
+────────────────────────────────────────────────────────────────────
 INPUTS
 ────────────────────────────────────────────────────────────────────
 I will provide:
@@ -35,6 +59,8 @@ The Professional Experience LaTeX source — read from the matching file in the
 registry above.
 The Projects LaTeX source — read from the same matching file. Do NOT ask me to
 paste either section unless file resolution fails.
+The project writeups — read from the Project Writeups folder in the registry above,
+and use them as additional truthful evidence when tailoring the Projects section.
 ────────────────────────────────────────────────────────────────────
 GOAL
 ────────────────────────────────────────────────────────────────────
@@ -109,13 +135,21 @@ PROJECT RULES
 ────────────────────────────────────────────────────────────────────
 Select 2–3 projects from the extracted \section{Projects} block that best align
 with the JD requirements, domain, tools, and seniority signal.
-Do not fabricate new projects or merge two projects into one.
+Do not fabricate new projects or merge two projects into one. A writeup may only
+deepen a project already in the base \section{Projects} block; it can never add a
+project that is not already listed there.
 Keep project titles, technologies, links, and dates truthful.
 Rewrite project bullets using the same STAR framing, metric, and keyword rules
-as the Experience section.
+as the Experience section. For any selected project that has a writeup in the
+PROJECT WRITEUPS REGISTRY, mine that writeup for the most JD-relevant, defensible
+tools, architecture, metrics, and outcomes, and prefer that concrete material over
+the thinner base bullet.
 1.5 lines is the strict maximum per bullet. Never exceed 1.5 lines.
 Use \textbf{} selectively for JD-relevant tools and outcomes.
-Do not add tools or technologies not present in the original project.
+Do not add tools or technologies not present in the original project. For projects
+with a writeup, "the original project" includes everything documented in that
+writeup, so any tool, system, or metric stated in the writeup is in-scope and
+defensible; tools absent from both the base bullet and the writeup remain off-limits.
 Projects should reinforce the Experience section, not repeat it. Avoid re-using
 the exact same keywords or framing across both sections.
 Output Overleaf LaTeX code only, using the exact project environment and commands
@@ -222,20 +256,24 @@ Style:
 PHASE 6.5 — PROJECT TAILORING
 Immediately after Phase 6 — no approval stop.
 SELECTION
-Review all projects extracted from \section{Projects}.
+Review all projects extracted from \section{Projects}, and consult any matching
+writeup in the PROJECT WRITEUPS REGISTRY for the project's full scope and metrics.
 Select 2–3 that best match the JD on: domain relevance, tools and technologies
-used, type of problem solved, seniority signal, and ATS keyword potential.
+used, type of problem solved, seniority signal, and ATS keyword potential. When a
+project has a writeup, weigh its full documented scope, not just the base bullet.
 
 In [FULL] mode: briefly state which projects were selected and why, and which
 were dropped and why.
 In [FAST] mode: omit selection commentary, output LaTeX only.
 REWRITE
 Rewrite the selected projects following PROJECT RULES above.
-Rewrite bullets using compact STAR framing.
+Rewrite bullets using compact STAR framing, drawing the strongest defensible
+tools, architecture, metrics, and outcomes from the project's writeup when one
+exists in the PROJECT WRITEUPS REGISTRY.
 Use \textbf{} selectively for JD-relevant tools and impact.
 Do not repeat the exact phrasing or keywords already used in the rewritten
 Experience section.
-Do not add tools or outcomes not in the original project.
+Do not add tools or outcomes not in the original project or its registered writeup.
 OUTPUT
 Output Overleaf LaTeX code only.
 Use the exact project environment and commands from the source file.
